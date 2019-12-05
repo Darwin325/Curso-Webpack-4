@@ -7,7 +7,8 @@
       "build": "webpack",
       "build:external": "webpack --config ./external/webpack.config.js --mode production",
       "build:multi": "webpack --config ./multi-entry-points/webpack.config.js --mode production",
-      "build:css": "webpack --config ./css-style-loader/webpack.config.js --mode development"
+      "build:css": "webpack --config ./css-style-loader/webpack.config.js --mode development",
+      "build:plugins": "webpack --config ./plugins/webpack.config.js --mode development"
    },
    "keywords": [
       "webpack",
@@ -15,7 +16,10 @@
    ],
    "author": "@zamora_darwin",
    "license": "MIT",
-   "dependencies": {},
+   "dependencies": {
+      "html-webpack-plugin": "3.2.0",
+      "mini-css-extract-plugin": "0.8.0"
+   },
    "devDependencies": {
       "css-loader": "3.2.0",
       "style-loader": "1.0.0",
